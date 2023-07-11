@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- Menu Root-->
+        <menuitem name="library"
+                  web_icon="library,static/description/icon.png"
+                  id="library.library_root"/>
+
+        <!-- Menus Book -->
+
+        <menuitem name="Books"
+                  id="library.library_book_categ"
+                  parent="library.library_root"/>
+
+        <menuitem name="Books" id="library.library_book_action"
+                  parent="library.library_book_categ"
+                  action="library.action_book_view"/>
+
+        <!-- Menus Author -->
+
+
+        <menuitem name="Author"
+                  id="library.library_author_categ"
+                  parent="library.library_root"/>
+
+
+        <menuitem name="Author" id="library.library_author_action"
+                  parent="library.library_author_categ"
+                  action="library.action_author_view"/>
+    </data>
+</odoo>
